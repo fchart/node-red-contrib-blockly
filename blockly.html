@@ -36,7 +36,7 @@
             name: "Dummy category",
             files: [
                 "blockly-contrib/npm/blockly/blockly_compressed.js",    // Creates a global Blockly variable
-                "blockly-contrib/npm/blockly/msg/en.js",                // Fills the Blockly.Msg with english translations
+                "blockly-contrib/npm/blockly/msg/zh-hant.js",                // Fills the Blockly.Msg with english translations
                 "blockly-contrib/npm/blockly/blocks_compressed.js",
                 "blockly-contrib/npm/blockly/javascript_compressed.js",
                 // When the npm package name contains a path separator (e.g. @blockly/plugin-workspace-search) then the frontend will
@@ -57,11 +57,11 @@
         // the texts have not been translated: they will simply be showed in english.
         // Note that the standard blockly en.js file contains a statement to clear all the Blockly.msg messages,
         // which means this one needs to be loaded first.  And all translations also have to be reloaded afterwards ...
-        if (language != "en") {
+        if (language != "zh-hant") {
             categories.forEach(function(category) {
                 (category.files || []).forEach(function(file) {
-                    if(file.endsWith("/en.js")) {
-                        var translationFile = file.replace("/en.js", "/" + language + ".js");
+                    if(file.endsWith("/zh-hant.js")) {
+                        var translationFile = file.replace("/zh-hant.js", "/" + language + ".js");
                         category.files.push(translationFile);
                     }
                 });
@@ -959,7 +959,7 @@
                 node.selectedConfigNodeId = $("#node-input-blocklyConfig").val();
                 
                 var counter = 0;
-                var language = "en";
+                var language = "zh-hant";
                 var categories;
 
                 if (node.selectedConfigNodeId && node.selectedConfigNodeId !== "_ADD_") {
