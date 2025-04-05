@@ -5,13 +5,13 @@
     <block type="setintervalwithcondition"></block>
   </category>
 -->
-  <category name="Logic" colour="#5C81A6">
+  <category name="邏輯" colour="#5C81A6">
     <block type="switch_case"></block>
   </category>
-  <category name="Text" colour="#5CA68D">
+  <category name="文字" colour="#5CA68D">
     <block type="text_special_character"></block>
   </category>
-  <category name="Miscellaneous" colour="#88A705">
+  <category name="雜項" colour="#88A705">
     <block type="misc_comment">
       <value name="TEXT">
         <shadow type="text">
