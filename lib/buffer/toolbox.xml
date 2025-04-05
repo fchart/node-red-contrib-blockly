@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
-  <category name="Buffer" colour="#DF6C06">
+  <category name="緩衝區" colour="#DF6C06">
     <block type="buffer_from_string">
       <value name="STRING_INPUT">
         <shadow type="text"></shadow>
